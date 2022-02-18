@@ -1,0 +1,163 @@
+body {
+  color: #40514E;
+  margin: 0;
+  /*makes all sides of margin 0px and covers the entire region with background color instead of white margin*/
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  color: #66BFBF;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  /*=90px*=5.625 times 16px. It is relative to its root value only, i.e., to 5.625 only and is uneffected by other font sizes*/
+  margin: 50px auto 0 auto;
+}
+
+h2 {
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  /*=40px=2.5 times 16px. It is relative to its root value only, i.e., to 2.5 only and is uneffected by other font sizes*/
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #11999E;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  padding: 20px;
+  text-decoration: none;
+}
+
+a:hover{ /*pseudo class*/
+  color: #EAF6F6;
+}
+
+p{
+  line-height: 2;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 50px auto;
+  /*border-color: #EAF6F6;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  width: 5%;
+  margin: 50px auto;*/
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.top-container {
+  background-color: #EAF6F6;
+  padding-top: 100px;
+  position: relative;
+}
+
+.middle-container {
+  margin: 100px 0 0 0;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  margin-top: 50px;
+  padding: 50px 0 20px;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.intro{
+  width: 30%;
+  margin: auto;
+}
+
+.top-cloud {
+  position: absolute;
+  /*Parent element is top-container with position: relative; so that child element can set their position with relative to parent element*/
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  /*takes the bottom-cloud out of normal flow if positon is made absolute. Same for top cloud*/
+  left: 250px;
+  bottom: 300px;
+}
+
+.skill-row {
+  margin: 10px auto;
+  overflow: auto;
+  /*keeps the images from not overflowing next to each other text when float property is used for skill1 and skill2*/
+  width: 50%;
+  text-align: left;
+}
+
+.skill1 {
+  float: left;
+  margin-right: 30px;
+  width: 25%;
+}
+
+.skill2 {
+  float: right;
+  margin-left: 30px;
+  width: 25%;
+}
+
+/*just for practice
+.code-skill-description{
+  clear: left;
+}
+
+.photography-skill-description{
+  clear: right;
+}*/
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.contact-me-description {
+  width: 40%;
+  margin: 40px auto 60px;
+}
